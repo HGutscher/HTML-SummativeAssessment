@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <!--
+      Name: Harrison Gutscher
+      Course: Software Development 20S
+      Teacher: Mr. Hardman
+      School: Pembina Trails Early College
+      Date Last Modified:10/24/2022
+    -->
+  </head>
+  <body>
+    <header>
+      <h1>Home Page</h1>
+      <br />
+      <!-- Links to change pages -->
+      <a href="index.html"> Home Page </a>
+      <br />
+      <a href="nuclearPower.html"> Nuclear Power </a>
+    </header>
+    <main>
+      <h2>Renewables</h2>
+
+      <p>
+        <u>Renewable energy</u> provides more and more usage within modern day
+        within the site we talk about how the advancements in
+        <u>renewable energy</u>
+        can help to make a better future.
+      </p>
+
+      <!-- Image for astetic-->
+      <img
+        src="images/Energy.jpg"
+        alt="Energy or power generation sources illustration. 
+          Includes renewable sources such as hydro dam, 
+          solar and wind also nuclear and coal power plants"
+        width="300" />
+
+      <br />
+      <br />
+      <br />
+
+      <!-- From for user input data -->
+      <form>
+        <!-- Fieldset for grouping like inputs-->
+        <fieldset>
+          <!-- 
+            Range to help gadge user expirience
+            
+            Range attribute makes a slide bar 
+            min = minimum number 
+            max = maximum number
+            value = defalt start number
+            step = amount of intervoles it goes up and down    
+          -->
+          <label for="rating">
+            Please rate the quality of accessibility from 0-10
+          </label>
+          <br />
+          <!-- input range for scale of quality-->
+          <input
+            type="range"
+            name="rating-of-page"
+            id="rating"
+            min="0"
+            max="10"
+            value="10" />
+
+          <br />
+          <br />
+
+          <!-- 
+            Textarea added for comments about site
+
+            Having it indented poorly like this
+            was the only was it saved
+          -->
+          <textarea name="comments" id="advice" rows="3" cols="30">
+Add any additional comments
+          </textarea>
+        </fieldset>
+
+        <br />
+
+        <!-- Text input for id of data input-->
+        <label for="fname">Please enter first name [required]</label>
+        <input type="text" name="fname" id="fname" required />
+        <br />
+        <label for="lname">Please enter last name [required]</label>
+        <input type="text" name="lname" id="lname" required />
+
+        <br />
+
+        <!-- Email input for id of data input-->
+        <label for="email">Please enter email [required]</label>
+        <input type="email" name="email" id="email" required />
+
+        <br />
+        <br />
+
+        <input type="submit" value="submit" />
+      </form>
+    </main>
+  </body>
+</html>
